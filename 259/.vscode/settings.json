@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.h": "FortranFreeForm",
+        "*.f90": "FortranFreeForm",
+        "*.f": "FortranFixedForm",
+        "Sh": "tsv",
+        "tdtshdif": "csv (whitespace)",
+        "stdout": "plaintext",
+        "tdtsh": "csv (whitespace)",
+        "xyc0400000": "csv (whitespace)",
+        "iomanip": "cpp",
+        "iostream": "cpp"
+    }
+}
