@@ -33,7 +33,7 @@ int main()
     {
         for (size_t j = 0; j < 3; j++)
         {
-            ll x = (i - 1 + j + N) % N;
+            ll x = (p[i] - i - 1 + j + N) % N;
             count[x]++;
         }
     }
