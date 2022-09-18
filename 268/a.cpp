@@ -30,9 +30,8 @@ int main()
         {
             mp[x]++;
             count++;
-            /* code */
-        }
 
+        }
     }
     cout << count << endl;
     return 0;
