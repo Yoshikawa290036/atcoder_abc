@@ -13,8 +13,7 @@ inline bool chmin(T &a, T b);
 ll roundup(ll a, ll b); // 切り上げ
 ll comb(ll n, ll r);    // nCr 組み合わせ
 template <class T>
-ll my_lower_bound(vector<T> &vec, T key); // vector配列のとき
-// vector配列ではないとき int index = lower_bound(A, A + N, key) - A;
+ll my_lower_bound(vector<T> &vec, T key);
 
 // ==================================================================== //
 
