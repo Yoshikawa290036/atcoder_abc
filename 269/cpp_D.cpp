@@ -20,6 +20,8 @@ ll my_lower_bound(vector<T> &vec, T key); // vector配列のとき
 
 int main()
 {
+    int N;
+    cin >> N;
 
     return 0;
 }

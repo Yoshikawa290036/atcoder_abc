@@ -23,6 +23,30 @@ int main()
     ll N;
     cin >> N;
 
+    vector<ll> res;
+
+    for (size_t i = 0; i < 61; i++)
+    {
+        if ((N >> i) & 1)
+        {
+            res.push_back((ll)pow(2, i));
+        }
+    }
+    // cout << res.size() << endl;
+
+    for (size_t i = 0; i < (1 << res.size()); i++)
+    {
+        ll x = 0;
+        for (size_t j = 0; j < res.size(); j++)
+        {
+            if ((i >> j) & 1)
+            {
+                x += res[j];
+            }
+        }
+        cout << x << endl;
+    }
+
     return 0;
 }
 
