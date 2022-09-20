@@ -20,7 +20,11 @@ ll my_lower_bound(vector<T> &vec, T key); // vector配列のとき
 
 int main()
 {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
 
+    cout << (a + b) * (c - d) << endl;
+    cout << "Takahashi" << endl;
     return 0;
 }
 

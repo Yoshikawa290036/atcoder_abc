@@ -20,6 +20,58 @@ ll my_lower_bound(vector<T> &vec, T key); // vector配列のとき
 
 int main()
 {
+    int a = 0, b = 0, c = 0, d = 0;
+
+    vector<string> strs(10);
+    string str;
+    string nothing = "..........";
+    for (size_t i = 0; i < 10; i++)
+    {
+        cin >> strs[i];
+    }
+
+    for (size_t i = 1; i < 11; i++)
+    {
+        str = strs[i - 1];
+        if (str == nothing)
+        {
+            // cout << i << endl;
+            if (a != 0 && b == 0)
+            {
+                b = i - 1;
+            }
+        }
+        else
+        {
+            if (a == 0)
+            {
+                a = i;
+                for (size_t j = 1; j < 11; j++)
+                {
+                    if (str[j - 1] == '#' && c == 0)
+                    {
+                        c = j;
+                    }
+                    if (str[j - 1] == '.' && c != 0 && d == 0)
+                    {
+                        d = j - 1;
+                    }
+                }
+            }
+        }
+    }
+    if (b == 0)
+    {
+        b = 10;
+    }
+    if (d == 0)
+    {
+        d = 10;
+    }
+
+
+    cout << a << ' ' << b << endl;
+    cout << c << ' ' << d << endl;
 
     return 0;
 }
