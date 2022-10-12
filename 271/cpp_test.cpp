@@ -43,7 +43,6 @@ int main()
         }
     }
     ll used = 0;
-
     for (size_t i = 1; i < N + 1; i++)
     {
         cout << sold << endl;
