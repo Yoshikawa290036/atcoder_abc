@@ -22,31 +22,43 @@ int main()
     ll N;
     cin >> N;
 
-    vector<ll> od,ev;
+    vector<ll> od, ev;
     ll x;
 
     for (size_t i = 0; i < N; i++)
     {
         cin >> x;
-        if (x%2)
+        if (x % 2)
         {
             od.push_back(x);
-        }else
+        }
+        else
         {
             ev.push_back(x);
         }
-
     }
     if (N == 2)
     {
-        if (a[0] + a[1] % 2)
+        if (od.size() == 1)
         {
             cout << -1 << endl;
             return 0;
         }
     }
+    sort(all(od));
+    sort(all(ev));
 
+    ll odod = -INF, evev = -INF;
 
+    if (od.size() > 1)
+    {
+        odod = od[od.size() - 1] + od[od.size() - 2];
+    }
+    if (ev.size() > 1)
+    {
+        evev = ev[ev.size() - 1] + ev[ev.size() - 2];
+    }
+    cout << max(odod, evev) << endl;
 
     return 0;
 }

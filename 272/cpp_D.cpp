@@ -19,6 +19,16 @@ ll my_lower_bound(vector<T> &vec, T key);
 
 int main()
 {
+    ll N,M;
+    cin >> N >> M;
+
+    for (size_t i = 1; i <= N; i++)
+    {
+        for (size_t j = 1; j <= M; j++)
+        {
+            ll len
+        }
+    }
 
     return 0;
 }
